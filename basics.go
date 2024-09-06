@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"rsc.io/quote/v4" // 1. import package 2. $go mod tidy (Add new module requirements and sums)
+)
 
 const Pi = 3.14 //Constants cannot be declared using the := syntax.
 
@@ -18,6 +22,7 @@ func split(sum int) (x, y int) {
 	return
 }
 func main() {
+	fmt.Println(quote.Glass())
 	var empty string //"" empty string
 	var k int        //0, false, default value
 	fmt.Println(empty, k, c, python, java)
